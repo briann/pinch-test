@@ -3,7 +3,43 @@
   <head>
     <title>Pinch test</title>
     <meta content="width=device-width,initial-scale=1.0" name="viewport">
+    <style>
+      body {
+        font-family: sans-serif;
+        color: #333;
+        font-size: 20px;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+      }
+      .reference-block {
+        text-align: center;
+      }
+      .wide.reference-block {
+        width: 768px;
+        height: 100px;
+        background-color: #DBEBFF;
+      }
+      .square.reference-block {
+        width: 400px;
+        height: 400px;
+        background-color: #E9F1EA;
+      }
+      .reference-block > div {
+        padding-top: 30px;
+      }
+    </style>
   </head>
   <body>
+    <div class="wide reference-block">
+      <div>768px x 100px</div>
+    </div>
+    <p/>
+    <div id="pinch-target" class="square reference-block">
+      <div>
+        Pinch here<br/>
+        400px x 400px
+      </div>
+    </div>
   </body>
 </html>

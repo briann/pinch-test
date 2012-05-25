@@ -1,5 +1,5 @@
 require 'sinatra'
 
 not_found do
-  'ruh roh'
+  'Not found'
 end
